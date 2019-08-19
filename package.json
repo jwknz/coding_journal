@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev:live-reading-values": "npm --prefix javascript/forms/reading_values/ run dev:live",
-    "package-files": "parcel build javascript/forms/reading_values/index.html javascript/forms/reading_values/simple_calculations.html --out-dir javascript/forms/reading_values/dist"
+    "package-files": "parcel build javascript/forms/reading_values/index.html javascript/forms/reading_values/simple_calculations.html --out-dir docs/javascript"
   },
   "dependencies": {
     "parcel-bundler": "^1.12.3"
