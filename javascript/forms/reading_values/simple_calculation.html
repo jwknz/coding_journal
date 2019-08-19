@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Reading Values</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <h1>Simple Calculations</h1>
+
+  <form class="b4-fo">
+    <div class="form-group">
+      <label for="field_name">Number 01:</label>
+      <input type="number" name="number01" id="number01" class="form-control" placeholder="00" aria-describedby="number01">
+      <small id="number01" class="text-muted">Number 01</small>
+    </div>
+    <div class="form-group">
+      <label for="field_name">Number 02:</label>
+      <input type="number" name="number02" id="number02" class="form-control" placeholder="00" aria-describedby="number02">
+      <small id="number02" class="text-muted">Number 02</small>
+    </div>
+    <button type="button" class="btn btn-primary" onClick="calculateSum()">Submit</button>
+  </form>
+
+  <br class="mb-4">
+  
+  <div class="card">
+    <h4 class="card-title">Title</h4>
+  </div>
+
+  <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+  
+    function calculateSum() {
+      let number01= document.querySelector('#number01')
+      let number01Value = parseInt(number01.value)
+
+      let number02= document.querySelector('#number02')
+      let number02Value = parseInt(number02.value)
+
+      let title = document.querySelector('.card-title')
+      title.innerHTML = `${number01Value} + ${number02Value} = ${number01Value + number02Value}`
+    }
+
+  </script>
+
+</body>
+</html>

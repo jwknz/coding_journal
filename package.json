@@ -1,0 +1,9 @@
+{
+  "name": "coding_journal",
+  "version": "1.0.0",
+  "description": "This package json is only used for run commands :-)",
+  "main": "index.js",
+  "scripts": {
+    "dev:live-reading-values": "npm --prefix javascript/forms/reading_values/ run dev:live"
+  }
+}

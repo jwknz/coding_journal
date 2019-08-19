@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Reading Values</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <h1>Reading Values From Froms</h1>
+
+  <form class="b4-fo">
+    <div class="form-group">
+      <label for="field_name">Name:</label>
+      <input type="text" name="field_name" id="field_name" class="form-control" placeholder="Bob" aria-describedby="field_name">
+      <small id="field_name" class="text-muted">Type in your name</small>
+    </div>
+    <button type="button" class="btn btn-primary" onClick="showText()">Submit</button>
+  </form>
+
+  <br class="mb-4">
+  
+  <div class="card">
+    <h4 class="card-title">Title</h4>
+  </div>
+
+  <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+  
+    function showText() {
+      let formName= document.querySelector('#field_name')
+      let formNameValue = formName.value
+
+      let title = document.querySelector('.card-title')
+      title.innerHTML = formNameValue
+    }
+
+  </script>
+
+</body>
+</html>
